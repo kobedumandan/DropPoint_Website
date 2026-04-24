@@ -5,77 +5,76 @@
 ================================================================ */
 
 :root {
-
   /* ── BRAND COLORS ─────────────────────────────────────────── */
-  --color-primary:       #1A6FB3;   /* Main blue */
-  --color-primary-dark:  #155A91;   /* Hover / darker blue */
-  --color-primary-light: #EBF5FF;   /* Pale blue background tint */
-  --color-accent:        #38BDF8;   /* Sky blue / highlight */
-  --color-accent-dark:   #0EA5E9;
+  --color-primary: #1a6fb3; /* Main blue */
+  --color-primary-dark: #155a91; /* Hover / darker blue */
+  --color-primary-light: #ebf5ff; /* Pale blue background tint */
+  --color-accent: #38bdf8; /* Sky blue / highlight */
+  --color-accent-dark: #0ea5e9;
 
-  --color-white:         #FFFFFF;
-  --color-dark:          #0C1B2E;   /* Near-black text */
-  --color-body:          #374151;   /* Body text */
-  --color-muted:         #6B7280;   /* Subdued text */
-  --color-gray-light:    #F3F6FA;   /* Light section background */
-  --color-border:        #E5E7EB;
+  --color-white: #ffffff;
+  --color-dark: #0c1b2e; /* Near-black text */
+  --color-body: #374151; /* Body text */
+  --color-muted: #6b7280; /* Subdued text */
+  --color-gray-light: #f3f6fa; /* Light section background */
+  --color-border: #e5e7eb;
 
   /* ── ICON BACKGROUND TINTS ────────────────────────────────── */
-  --icon-bg-blue:        #DBEAFE;
-  --icon-bg-teal:        #CCFBF1;
-  --icon-bg-green:       #D1FAE5;
-  --icon-bg-indigo:      #E0E7FF;
+  --icon-bg-blue: #dbeafe;
+  --icon-bg-teal: #ccfbf1;
+  --icon-bg-green: #d1fae5;
+  --icon-bg-indigo: #e0e7ff;
 
   /* ── TYPOGRAPHY ───────────────────────────────────────────── */
-  --font-family:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-family: "Inter", system-ui, -apple-system, sans-serif;
 
-  --text-xs:    0.75rem;     /*  12px */
-  --text-sm:    0.875rem;    /*  14px */
-  --text-base:  1rem;        /*  16px */
-  --text-lg:    1.125rem;    /*  18px */
-  --text-xl:    1.25rem;     /*  20px */
-  --text-2xl:   1.5rem;      /*  24px */
-  --text-3xl:   1.875rem;    /*  30px */
-  --text-4xl:   2.25rem;     /*  36px */
-  --text-5xl:   3rem;        /*  48px */
-  --text-6xl:   3.75rem;     /*  60px */
+  --text-xs: 0.75rem; /*  12px */
+  --text-sm: 0.875rem; /*  14px */
+  --text-base: 1rem; /*  16px */
+  --text-lg: 1.125rem; /*  18px */
+  --text-xl: 1.25rem; /*  20px */
+  --text-2xl: 1.5rem; /*  24px */
+  --text-3xl: 1.875rem; /*  30px */
+  --text-4xl: 2.25rem; /*  36px */
+  --text-5xl: 3rem; /*  48px */
+  --text-6xl: 3.75rem; /*  60px */
 
-  --weight-normal:   400;
-  --weight-medium:   500;
+  --weight-normal: 400;
+  --weight-medium: 500;
   --weight-semibold: 600;
-  --weight-bold:     700;
-  --weight-extrabold:800;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
 
   /* ── SPACING ──────────────────────────────────────────────── */
-  --space-1:   0.25rem;   /*  4px */
-  --space-2:   0.5rem;    /*  8px */
-  --space-3:   0.75rem;   /* 12px */
-  --space-4:   1rem;      /* 16px */
-  --space-5:   1.25rem;   /* 20px */
-  --space-6:   1.5rem;    /* 24px */
-  --space-8:   2rem;      /* 32px */
-  --space-10:  2.5rem;    /* 40px */
-  --space-12:  3rem;      /* 48px */
-  --space-16:  4rem;      /* 64px */
-  --space-20:  5rem;      /* 80px */
-  --space-24:  6rem;      /* 96px */
-  --space-32:  8rem;      /* 128px */
+  --space-1: 0.25rem; /*  4px */
+  --space-2: 0.5rem; /*  8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
 
   /* ── LAYOUT ───────────────────────────────────────────────── */
-  --container-max:   1200px;
-  --navbar-height:   72px;
+  --container-max: 1200px;
+  --navbar-height: 72px;
 
   /* ── RADIUS ───────────────────────────────────────────────── */
-  --radius-sm:   0.375rem;
-  --radius-md:   0.75rem;
-  --radius-lg:   1.25rem;
-  --radius-xl:   2rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 2rem;
   --radius-full: 9999px;
 
   /* ── SHADOWS ──────────────────────────────────────────────── */
-  --shadow-sm:      0 1px 3px rgba(0, 0, 0, 0.07);
-  --shadow-md:      0 4px 16px rgba(0, 0, 0, 0.09);
-  --shadow-lg:      0 8px 32px rgba(0, 0, 0, 0.11);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.09);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.11);
   --shadow-primary: 0 8px 24px rgba(26, 111, 179, 0.28);
 
   /* ── TRANSITIONS ──────────────────────────────────────────── */
@@ -84,11 +83,9 @@
   --transition-slow: 400ms ease;
 
   /* ── SUBSCRIBE SECTION GRADIENT ───────────────────────────── */
-  --subscribe-bg-start: #0C1B2E;
-  --subscribe-bg-end:   #1A4D7A;
-
+  --subscribe-bg-start: #0c1b2e;
+  --subscribe-bg-end: #1a4d7a;
 }
-
 
 /* ================================================================
    RESET & BASE
@@ -115,7 +112,8 @@ body {
   overflow-x: hidden;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -129,11 +127,13 @@ ul {
   list-style: none;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   font-family: inherit;
   font-size: inherit;
 }
-
 
 /* ================================================================
    UTILITY — CONTAINER
@@ -145,7 +145,6 @@ input, textarea, select, button {
   margin-inline: auto;
   padding-inline: var(--space-6);
 }
-
 
 /* ================================================================
    UTILITY — BUTTONS
@@ -161,11 +160,9 @@ input, textarea, select, button {
   font-size: var(--text-base);
   cursor: pointer;
   border: 2px solid transparent;
-  transition: background var(--transition-base),
-              color      var(--transition-base),
-              border-color var(--transition-base),
-              transform  var(--transition-fast),
-              box-shadow var(--transition-base);
+  transition: background var(--transition-base), color var(--transition-base),
+    border-color var(--transition-base), transform var(--transition-fast),
+    box-shadow var(--transition-base);
   white-space: nowrap;
   text-decoration: none;
 }
@@ -205,7 +202,6 @@ input, textarea, select, button {
   width: 100%;
   justify-content: center;
 }
-
 
 /* ================================================================
    UTILITY — SECTION HEADERS
@@ -254,7 +250,6 @@ input, textarea, select, button {
   color: rgba(255, 255, 255, 0.72);
 }
 
-
 /* ================================================================
    NAVBAR
 ================================================================ */
@@ -267,7 +262,7 @@ input, textarea, select, button {
   z-index: 1000;
   height: var(--navbar-height);
   transition: background var(--transition-base),
-              box-shadow  var(--transition-base);
+    box-shadow var(--transition-base);
 }
 
 /* Transparent by default; JS adds .scrolled when page scrolls */
@@ -326,8 +321,7 @@ input, textarea, select, button {
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
   color: var(--color-body);
-  transition: color var(--transition-fast),
-              background var(--transition-fast);
+  transition: color var(--transition-fast), background var(--transition-fast);
 }
 
 .nav-link:hover,
@@ -370,15 +364,19 @@ input, textarea, select, button {
   height: 2px;
   background: var(--color-dark);
   border-radius: 2px;
-  transition: transform var(--transition-base),
-              opacity   var(--transition-base);
+  transition: transform var(--transition-base), opacity var(--transition-base);
 }
 
 /* Hamburger → X animation */
-.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle.open span:nth-child(2) { opacity: 0; }
-.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
 
 /* ================================================================
    HERO
@@ -389,20 +387,24 @@ input, textarea, select, button {
   display: flex;
   align-items: center;
   padding-top: var(--navbar-height);
-  background: linear-gradient(135deg, #EBF5FF 0%, #FFFFFF 60%, #F0FAFF 100%);
+  background: linear-gradient(135deg, #ebf5ff 0%, #ffffff 60%, #f0faff 100%);
   overflow: hidden;
   position: relative;
 }
 
 /* Subtle background decoration */
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -200px;
   right: -200px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.12) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -458,7 +460,7 @@ input, textarea, select, button {
 
 /* Underline decoration on highlight */
 .hero-highlight::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 2px;
   left: 0;
@@ -527,6 +529,7 @@ input, textarea, select, button {
   min-width: 0;
   display: flex;
   justify-content: center;
+  margin-left: 30px;
 }
 
 .hero-img-wrapper {
@@ -547,7 +550,11 @@ input, textarea, select, button {
 .hero-blob {
   position: absolute;
   inset: -24px -24px -24px -24px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+  background: linear-gradient(
+    135deg,
+    var(--color-accent),
+    var(--color-primary)
+  );
   border-radius: var(--radius-xl);
   z-index: -1;
   opacity: 0.12;
@@ -569,8 +576,13 @@ input, textarea, select, button {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 .hero-float-icon {
@@ -590,7 +602,6 @@ input, textarea, select, button {
   color: var(--color-muted);
   line-height: 1.2;
 }
-
 
 /* ================================================================
    ABOUT US
@@ -614,7 +625,7 @@ input, textarea, select, button {
   border-radius: var(--radius-lg);
   padding: var(--space-8);
   transition: box-shadow var(--transition-base),
-              transform  var(--transition-base);
+    transform var(--transition-base);
 }
 
 .about-card:hover {
@@ -650,7 +661,6 @@ input, textarea, select, button {
   line-height: 1.7;
 }
 
-
 /* ================================================================
    PRODUCTS & SERVICES
 ================================================================ */
@@ -675,8 +685,7 @@ input, textarea, select, button {
   box-shadow: var(--shadow-sm);
   border: 2px solid transparent;
   transition: box-shadow var(--transition-base),
-              transform  var(--transition-base),
-              border-color var(--transition-base);
+    transform var(--transition-base), border-color var(--transition-base);
   position: relative;
 }
 
@@ -715,10 +724,18 @@ input, textarea, select, button {
   height: 80px;
 }
 
-.product-blue   { background: linear-gradient(135deg, #1A6FB3, #38BDF8); }
-.product-teal   { background: linear-gradient(135deg, #0D9488, #38BDF8); }
-.product-indigo { background: linear-gradient(135deg, #4F46E5, #818CF8); }
-.product-green  { background: linear-gradient(135deg, #059669, #34D399); }
+.product-blue {
+  background: linear-gradient(135deg, #1a6fb3, #38bdf8);
+}
+.product-teal {
+  background: linear-gradient(135deg, #0d9488, #38bdf8);
+}
+.product-indigo {
+  background: linear-gradient(135deg, #4f46e5, #818cf8);
+}
+.product-green {
+  background: linear-gradient(135deg, #059669, #34d399);
+}
 
 .product-card-body {
   padding: var(--space-5) var(--space-5) var(--space-6);
@@ -752,13 +769,12 @@ input, textarea, select, button {
 }
 
 .product-features li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--color-primary);
   font-weight: var(--weight-bold);
 }
-
 
 /* ================================================================
    HOW IT WORKS / VIDEO
@@ -796,7 +812,7 @@ input, textarea, select, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-dark) 0%, #1A4D7A 100%);
+  background: linear-gradient(135deg, var(--color-dark) 0%, #1a4d7a 100%);
 }
 
 .video-placeholder-inner {
@@ -817,8 +833,7 @@ input, textarea, select, button {
   margin-bottom: var(--space-4);
   cursor: pointer;
   transition: background var(--transition-base),
-              transform  var(--transition-fast),
-              box-shadow var(--transition-base);
+    transform var(--transition-fast), box-shadow var(--transition-base);
   box-shadow: var(--shadow-primary);
 }
 
@@ -898,13 +913,20 @@ input, textarea, select, button {
   margin-top: var(--space-4);
 }
 
-
 /* ================================================================
    SUBSCRIBE / CTA
 ================================================================ */
 
+.plan-spacer {
+  height: 100px;
+}
+
 .subscribe {
-  background: linear-gradient(135deg, var(--subscribe-bg-start) 0%, var(--subscribe-bg-end) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--subscribe-bg-start) 0%,
+    var(--subscribe-bg-end) 100%
+  );
   padding-block: var(--space-24);
   text-align: center;
   position: relative;
@@ -913,14 +935,18 @@ input, textarea, select, button {
 
 /* Subtle background decoration */
 .subscribe::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 65%);
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.08) 0%,
+    transparent 65%
+  );
   pointer-events: none;
 }
 
@@ -940,12 +966,11 @@ input, textarea, select, button {
   padding: var(--space-8);
   position: relative;
   transition: background var(--transition-base),
-              border-color var(--transition-base),
-              transform var(--transition-base);
+    border-color var(--transition-base), transform var(--transition-base);
 }
 
 .plan-card:hover {
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   transform: translateY(-4px);
 }
 
@@ -957,6 +982,11 @@ input, textarea, select, button {
 
 .plan-card--featured:hover {
   transform: scale(1.03) translateY(-4px);
+  background: rgba(255, 255, 255, 0.95  )
+}
+
+.plan-card--featured .our-commission {
+  border: 1px solid #c1d7e9;
 }
 
 .plan-badge {
@@ -1024,8 +1054,55 @@ input, textarea, select, button {
 .plan-desc {
   font-size: var(--text-sm);
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.our-commission {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
   margin-bottom: var(--space-6);
-  line-height: 1.6;
+}
+
+.commission-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10.5px;
+  color: var(--color-muted);
+  margin-bottom: var(--space-1);
+}
+
+.commission-price {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.commission-currency {
+  font-size: 12px;
+  font-weight: var(--weight-semibold);
+  color: var(--color-dark);
+}
+
+.commission-amount {
+  font-size: var(--text-base);
+  font-weight: var(--weight-extrabold);
+  color: var(--color-dark);
+  line-height: 1;
+  margin-right: var(--space-1);
+}
+
+.commission-per-gallon {
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  color: var(--color-dark);
+}
+
+.commission-subtext {
+  font-size: 11.5px;
+  transform: translateY(-3.5px);
+  height: 16px;
 }
 
 .plan-card--featured .plan-desc {
@@ -1051,7 +1128,7 @@ input, textarea, select, button {
 }
 
 .plan-features li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--color-accent);
@@ -1067,6 +1144,7 @@ input, textarea, select, button {
   width: 100%;
   justify-content: center;
   padding: var(--space-3) var(--space-4);
+  bottom: 0;
 }
 
 .btn-plan--primary {
@@ -1122,7 +1200,7 @@ input, textarea, select, button {
   font-size: var(--text-base);
   outline: none;
   transition: border-color var(--transition-fast),
-              background   var(--transition-fast);
+    background var(--transition-fast);
 }
 
 .subscribe-input::placeholder {
@@ -1138,7 +1216,6 @@ input, textarea, select, button {
   font-size: var(--text-xs);
   color: rgba(255, 255, 255, 0.4);
 }
-
 
 /* ================================================================
    CONTACT
@@ -1214,9 +1291,8 @@ input, textarea, select, button {
   align-items: center;
   justify-content: center;
   color: var(--color-muted);
-  transition: background var(--transition-fast),
-              color var(--transition-fast),
-              border-color var(--transition-fast);
+  transition: background var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 .social-link:hover {
@@ -1270,7 +1346,7 @@ input, textarea, select, button {
   font-size: var(--text-base);
   outline: none;
   transition: border-color var(--transition-fast),
-              box-shadow   var(--transition-fast);
+    box-shadow var(--transition-fast);
   resize: vertical;
 }
 
@@ -1291,7 +1367,6 @@ input, textarea, select, button {
   color: var(--color-primary);
   min-height: 1.4em;
 }
-
 
 /* ================================================================
    FOOTER
@@ -1363,13 +1438,11 @@ input, textarea, select, button {
   color: rgba(255, 255, 255, 0.35);
 }
 
-
 /* ================================================================
    RESPONSIVE — TABLET  (≤ 1024px)
 ================================================================ */
 
 @media (max-width: 1024px) {
-
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1388,16 +1461,13 @@ input, textarea, select, button {
   .plan-card--featured:hover {
     transform: translateY(-4px);
   }
-
 }
-
 
 /* ================================================================
    RESPONSIVE — MOBILE  (≤ 768px)
 ================================================================ */
 
 @media (max-width: 768px) {
-
   /* Navbar */
   .nav-toggle {
     display: flex;
@@ -1496,16 +1566,13 @@ input, textarea, select, button {
   .section-title {
     font-size: var(--text-3xl);
   }
-
 }
-
 
 /* ================================================================
    RESPONSIVE — SMALL MOBILE  (≤ 480px)
 ================================================================ */
 
 @media (max-width: 480px) {
-
   .hero-buttons {
     flex-direction: column;
   }
@@ -1526,5 +1593,4 @@ input, textarea, select, button {
   .hero-stats {
     gap: var(--space-4);
   }
-
 }
