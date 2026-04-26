@@ -52,9 +52,8 @@
         <li><a href="#products" class="nav-link">Products &amp; Services</a></li>
         <li><a href="#video" class="nav-link">How It Works</a></li>
         <li><a href="#subscribe" class="nav-link">Subscribe</a></li>
-        <li><a href="#contact" class="nav-link nav-contact-btn">Contact Us</a></li>
+        <li><a href="#contact" id="nav-contact-btn" class="nav-contact-btn">Contact Us</a></li>
       </ul>
-
     </div>
   </nav>
 
@@ -73,7 +72,7 @@
         <span class="badge">
           <!-- Badge icon -->
           <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M16 3C16 3 6 13.5 6 20a10 10 0 0020 0C26 13.5 16 3 16 3z" fill="white" />
+            <path d="M16 3C16 3 6 13.5 6 20a10 10 0 0020 0C26 13.5 16 3 16 3z" />
           </svg>
           Clean Water, On Demand
         </span>
@@ -155,13 +154,20 @@
   <section class="about" id="about">
     <div class="container">
 
-      <div class="section-label">About DropPoint</div>
+      <div class="section-label">
+        <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3C16 3 6 13.5 6 20a10 10 0 0020 0C26 13.5 16 3 16 3z" />
+        </svg>
+        About DropPoint
+      </div>
       <h2 class="section-title">Hydration, simplified.</h2>
-      <p class="section-subtitle">
-        DropPoint was built to solve a simple problem: finding clean, affordable
-        drinking water shouldn't be a chore. We connect households and businesses
-        with trusted local water stations — all in one place.
-      </p>
+      <div class="section-subtitle">
+        <p>
+          DropPoint was built to solve a simple problem: finding clean, affordable
+          drinking water shouldn't be a chore. We connect households and businesses
+          with trusted local water stations — all in one place.
+        </p>
+      </div>
 
       <div class="about-cards">
 
@@ -218,12 +224,19 @@
   <section class="products" id="products">
     <div class="container">
 
-      <div class="section-label">What We Offer</div>
+      <div class="section-label">
+        <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3C16 3 6 13.5 6 20a10 10 0 0020 0C26 13.5 16 3 16 3z" />
+        </svg>
+        What We Offer
+      </div>
       <h2 class="section-title">Products &amp; Services</h2>
-      <p class="section-subtitle">
-        Whether you need a single refill or a recurring supply for your business,
-        DropPoint has a solution that fits.
-      </p>
+      <div class="section-subtitle">
+        <p>
+          Whether you need a single refill or a recurring supply for your business,
+          DropPoint has a solution that fits.
+        </p>
+      </div>
 
       <div class="product-grid">
 
@@ -327,12 +340,19 @@
   <section class="video-section" id="video">
     <div class="container">
 
-      <div class="section-label">See It in Action</div>
+      <div class="section-label">
+        <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3C16 3 6 13.5 6 20a10 10 0 0020 0C26 13.5 16 3 16 3z" />
+        </svg>
+        See It in Action
+      </div>
       <h2 class="section-title">How DropPoint Works</h2>
-      <p class="section-subtitle">
-        From finding a station to getting water at your doorstep — it takes less
-        than two minutes.
-      </p>
+      <div class="section-subtitle">
+        <p>
+          From finding a station to getting water at your doorstep — it takes less
+          than two minutes.
+        </p>
+      </div>
 
       <!-- Video embed -->
       <div class="video-wrapper">
@@ -341,7 +361,7 @@
           Swap the src below with your YouTube embed URL.
           Format: https://www.youtube.com/embed/YOUR_VIDEO_ID
         -->
-        <div class="video-placeholder" id="videoPlaceholder">
+        <!-- <div class="video-placeholder" id="videoPlaceholder">
           <div class="video-placeholder-inner">
             <button class="video-play-btn" id="videoPlayBtn" aria-label="Play promotional video">
               <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
@@ -351,15 +371,21 @@
             <p>Watch Our Promo Video</p>
             <span>Replace with your YouTube embed link in index.html</span>
           </div>
-        </div>
-        <!-- Un-comment and replace VIDEO_ID when ready:
+        </div> -->
+        <!-- Un-comment and replace VIDEO_ID when ready: -->
+        <!--
+          enablejsapi=1  → lets JS send play/pause commands via postMessage
+          autoplay=0     → JS controls autoplay on scroll (see main.js)
+          mute=1         → required by browsers for scroll-triggered autoplay
+        -->
         <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID?autoplay=0&rel=0"
+          id="promoVideo"
+          src="https://www.youtube.com/embed/OZQYFbJ5M5c?enablejsapi=1&autoplay=0&mute=1&rel=0"
           title="DropPoint Promotional Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
-        -->
+        
       </div>
 
       <!-- Steps below the video -->
@@ -399,11 +425,16 @@
   <section class="subscribe" id="subscribe">
     <div class="container">
 
-      <div class="section-label section-label--light">Subscription Plans</div>
+      <div class="section-label section-label--light">
+        <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3C16 3 6 13.5 6 20a10 10 0 0020 0C26 13.5 16 3 16 3z" />
+        </svg>
+        Subscription Plans
+      </div>
       <h2 class="section-title section-title--light">Start Your Water Plan Today</h2>
-      <p class="section-subtitle section-subtitle--light">
-        Choose a plan that fits your lifestyle. Cancel or change anytime.
-      </p>
+      <div class="section-subtitle section-subtitle--light">
+        <p>Choose a plan that fits your lifestyle. Cancel or change anytime.</p>
+      </div>
 
       <div class="plans">
 
@@ -518,10 +549,10 @@
 
       <div class="section-label">Get in Touch</div>
       <h2 class="section-title">Contact Us</h2>
-      <p class="section-subtitle">
+      <div class="section-subtitle">
         Have questions, partnership inquiries, or need support?
         We'd love to hear from you.
-      </p>
+      </div>
 
       <div class="contact-wrapper">
 
@@ -539,7 +570,7 @@
             <div>
               <strong>Phone</strong>
               <!-- REPLACE with your actual phone number -->
-              <p>+63 (912) 345-6789</p>
+              <p>+63 963 819 3358</p>
             </div>
           </div>
 
@@ -554,7 +585,7 @@
             <div>
               <strong>Email</strong>
               <!-- REPLACE with your actual email -->
-              <p>hello@droppoint.ph</p>
+              <p>droppoint@gmail.com</p>
             </div>
           </div>
 
@@ -569,7 +600,7 @@
             <div>
               <strong>Location</strong>
               <!-- REPLACE with your actual address -->
-              <p>Metro Manila, Philippines</p>
+              <p>Panabo City, Philippines</p>
             </div>
           </div>
 

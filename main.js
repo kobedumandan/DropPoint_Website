@@ -84,11 +84,20 @@
     let currentId = '';
 
     sections.forEach(function (section) {
+      const contact_btn = document.getElementById('nav-contact-btn')
       const rect = section.getBoundingClientRect();
       if (rect.top <= CONFIG.activeSectionOffset) {
         currentId = section.id;
       }
+
+      if (currentId == 'contact') {
+        contact_btn.classList.add('shimmer')
+      } else {
+        contact_btn.classList.remove('shimmer')
+      }
     });
+
+    
 
     allNavLinks.forEach(function (link) {
       const href = link.getAttribute('href');
@@ -153,6 +162,45 @@
 
       subForm.reset();
     });
+  }
+
+
+  /* ── VIDEO: autoplay on scroll ──────────────────────────── */
+  // Requires enablejsapi=1 in the iframe src (already set in index.html).
+  // Browsers only allow programmatic autoplay when the video is muted,
+  // so mute=1 is also set in the src.
+  if ('IntersectionObserver' in window) {
+    const videoIframe = document.getElementById('promoVideo');
+
+    if (videoIframe) {
+      function sendYT(func) {
+        videoIframe.contentWindow.postMessage(
+          JSON.stringify({ event: 'command', func: func, args: [] }),
+          'https://www.youtube.com'
+        );
+      }
+
+      var videoObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              // Play first, then unmute — browser requires the video to be
+              // playing before it will honour an unmute via postMessage.
+              sendYT('playVideo');
+              sendYT('unMute');
+            } else {
+              // Re-mute before pausing so it resets cleanly for the next scroll.
+              sendYT('mute');
+              sendYT('pauseVideo');
+            }
+          });
+        },
+        // Trigger when 50% of the iframe is visible
+        { threshold: 0.5 }
+      );
+
+      videoObserver.observe(videoIframe);
+    }
   }
 
 
